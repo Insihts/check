@@ -79,12 +79,13 @@ const config: DocsThemeConfig = {
       </>
     )
   },
-  editLink: {
-    content: 'Edit this page on GitHub →'
-  },
   feedback: {
-    content: 'Question? Give us feedback →',
-    labels: 'feedback'
+    content: (
+      <a href="https://www.insihts.com/resources/contact" target="_blank">
+        Provide feedback
+      </a>
+    ),
+    labels: ['type:0'],
   },
   sidebar: {
     defaultMenuCollapseLevel: 0,

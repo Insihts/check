@@ -79,7 +79,9 @@ const config: DocsThemeConfig = {
       </>
     )
   },
-  feedback: null,
+  feedback: {
+    content: null
+  },
   sidebar: {
     defaultMenuCollapseLevel: 0,
     toggleButton: true

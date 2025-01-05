@@ -79,14 +79,7 @@ const config: DocsThemeConfig = {
       </>
     )
   },
-  feedback: {
-    content: (
-      <a href="https://www.insihts.com/resources/contact" target="_blank">
-        Provide feedback
-      </a>
-    ),
-    labels: ['type:0'],
-  },
+  feedback: null,
   sidebar: {
     defaultMenuCollapseLevel: 0,
     toggleButton: true

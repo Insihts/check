@@ -82,6 +82,9 @@ const config: DocsThemeConfig = {
   feedback: {
     content: null
   },
+  editLink: {
+    content: null
+  },
   sidebar: {
     defaultMenuCollapseLevel: 0,
     toggleButton: true

@@ -12,8 +12,8 @@ To track outbound links, add data attributes to the anchor tag containing the ex
 
 ```html
 <a href="https://www.external-website.com"
-  data-insihts-event="outbound-link-click"
-  data-insihts-event-url="https://www.external-website.com"
+  data-Prodio-event="outbound-link-click"
+  data-Prodio-event-url="https://www.external-website.com"
 >
   External link
 </a>
@@ -30,9 +30,9 @@ If you don't want to manually update all your anchor tags, use the following scr
   (() => {
     const name = 'outbound-link-click';
     document.querySelectorAll('a').forEach(a => {
-      if (a.host !== window.location.host && !a.getAttribute('data-insihts-event')) {
-        a.setAttribute('data-insihts-event', name);
-        a.setAttribute('data-insihts-event-url', a.href);
+      if (a.host !== window.location.host && !a.getAttribute('data-Prodio-event')) {
+        a.setAttribute('data-Prodio-event', name);
+        a.setAttribute('data-Prodio-event-url', a.href);
       }
     });
   })();
@@ -46,5 +46,5 @@ After implementing the above, verify the tracking by clicking on an outbound lin
 </Steps>
 
 <Callout>
-  For further guidance, visit our [Help Center](https://insihts.com) or reach out to support.
+  For further guidance, visit our [Help Center](https://Prodio.com) or reach out to support.
 </Callout>

@@ -6,28 +6,28 @@ import { Tabs } from 'nextra/components'
 
 # Integrations
 
-Insihts Workflows automatically tracks how users interact with your workflows to help you better understand user engagement with your product. If the built-in [insights](/workflows/analytics/workflow-insights) are not enough, you can easily integrate with almost any analytics tool to get the full picture of your users' behavior.
+Prodio Workflows automatically tracks how users interact with your workflows to help you better understand user engagement with your product. If the built-in [insights](/workflows/analytics/workflow-insights) are not enough, you can easily integrate with almost any analytics tool to get the full picture of your users' behavior.
 
 ## Setup
 
-To integrate Insihts Workflows with your analytics tool, pass a `tracking` function to the Insihts `init` function. The `tracking` function will be called every time a user interacts with your workflows, sending an `event` object with the details of the interaction.
+To integrate Prodio Workflows with your analytics tool, pass a `tracking` function to the Prodio `init` function. The `tracking` function will be called every time a user interacts with your workflows, sending an `event` object with the details of the interaction.
 
-<Tabs items={["Insihts", "Mixpanel"]}>
+<Tabs items={["Prodio", "Mixpanel"]}>
 
 <Tabs.Tab>
 
-### Integrating with Insihts
+### Integrating with Prodio
 
-You can use Insihts' own analytics endpoint to track events directly:
+You can use Prodio' own analytics endpoint to track events directly:
 
 ```js
-import { init } from "@insihts/workflow";
+import { init } from "@Prodio/workflow";
 
 init({
   projectId: "xxx",
   userId: "abc",
   tracking: (event) => {
-    fetch("https://analytics.insihts.com/track", {
+    fetch("https://analytics.Prodio.com/track", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -45,7 +45,7 @@ init({
 });
 ```
 
-This sends event data directly to Insihts for tracking and analysis.
+This sends event data directly to Prodio for tracking and analysis.
 
 </Tabs.Tab>
 
@@ -53,10 +53,10 @@ This sends event data directly to Insihts for tracking and analysis.
 
 ### Integrating with Mixpanel
 
-Here is an example of how you can send events from Insihts Workflows to Mixpanel for analysis:
+Here is an example of how you can send events from Prodio Workflows to Mixpanel for analysis:
 
 ```js
-import { init } from "@insihts/workflow";
+import { init } from "@Prodio/workflow";
 import mixpanel from "mixpanel-browser";
 
 init({
@@ -86,7 +86,7 @@ Events are sent to your tracking function every time a user interacts with a wor
 
 ### Event Types
 
-These are the events that Insihts Workflows will send to your tracking function:
+These are the events that Prodio Workflows will send to your tracking function:
 
 - `startFlow`: When a user starts a workflow.
 - `nextStep`: When a user goes to the next step in a workflow.

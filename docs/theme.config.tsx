@@ -12,9 +12,9 @@ const config: DocsThemeConfig = {
     key: '3.0-release',
     content: (
       <div className='before:content-["🎉_"]'>
-        Join Insihts For Free{' '}
+        Join Prodio For Free{' '}
         <Link
-          href="https://insihts.com/auth/sign-up"
+          href="https://prodio.dev/auth/sign-up"
           className='after:content-["_→"]'
         >
           Sign-Up
@@ -23,10 +23,10 @@ const config: DocsThemeConfig = {
     )
   },
   chat: {
-    link: 'https://discord.gg/A8HQH6DW'
+    link: 'https://discord.com/invite/ewnbjNH9BV'
   },
   project: {
-    link: 'https://x.com/insihts',
+    link: 'https://x.com/prodio_app',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24">
         <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
@@ -86,14 +86,14 @@ const config: DocsThemeConfig = {
     content: null
   },
   sidebar: {
-    defaultMenuCollapseLevel: 0,
+    defaultMenuCollapseLevel: 2,
     toggleButton: true
   },
   footer: {
     content: (
       <div className="flex w-full flex-col items-center sm:items-start">
         <p className="mt-6 text-xs">
-          © {new Date().getFullYear()} Insihts, Corp.
+          © {new Date().getFullYear()} Prodio, Corp.
         </p>
       </div>
     )

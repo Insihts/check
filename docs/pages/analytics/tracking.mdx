@@ -1,8 +1,8 @@
 import { Callout, Steps } from 'nextra/components'
 
-# Tracking Methods in Insihts
+# Tracking Methods in Prodio
 
-Insihts provides powerful tracking methods for collecting data on pageviews, events, and sessions. Here’s how to use these features effectively.
+Prodio provides powerful tracking methods for collecting data on pageviews, events, and sessions. Here’s how to use these features effectively.
 
 <Steps>
 
@@ -22,7 +22,7 @@ Tracks a pageview automatically when the tracking script is loaded. By default, 
 If you want to send a custom payload, pass an object to the `track` function:
 
 ```js
-insihts.track({
+Prodio.track({
   website: 'e676c9b4-11e4-4ef1-a4d7-87001773e9f2',
   url: '/home',
   title: 'Home page'
@@ -32,7 +32,7 @@ insihts.track({
 To include existing properties and add custom ones:
 
 ```js
-insihts.track(props => ({
+Prodio.track(props => ({
   ...props,
   url: '/home',
   title: 'Home page'
@@ -44,20 +44,20 @@ insihts.track(props => ({
 Tracks an event with a given name:
 
 ```js
-insihts.track('signup-button');
+Prodio.track('signup-button');
 ```
 
 #### Event Data
 Tracks an event with dynamic data:
 
 ```js
-insihts.track('signup-button', { name: 'newsletter', id: 123 });
+Prodio.track('signup-button', { name: 'newsletter', id: 123 });
 ```
 
 Equivalent to:
 
 ```js
-insihts.track(props => ({
+Prodio.track(props => ({
   ...props,
   name: 'signup-button',
   data: {
@@ -81,11 +81,11 @@ Event data must conform to the following limits:
 Tracks a session with dynamic data. Use the `identify` function to save data about the current session:
 
 ```js
-insihts.identify({ email: 'bob@aol.com' });
+Prodio.identify({ email: 'bob@aol.com' });
 ```
 
 </Steps>
 
 <Callout>
-  For more details, refer to the [Insights Documentation](https://insihts.com) or contact our support team.
+  For more details, refer to the [Insights Documentation](https://Prodio.com) or contact our support team.
 </Callout>

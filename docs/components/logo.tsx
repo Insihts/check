@@ -10,16 +10,16 @@ function LogoImage({
     <div>
       {/* Dark image for light mode */}
       <img
-        src={'/insihts_light.png'}
-        alt={'Insihts'}
-        className='h-[55px] w-auto dark:hidden'
+        src={'/Prodio/prodio/prodio_logo_3.png'}
+        alt={'Prodio'}
+        className='h-[45px] w-auto dark:hidden'
       />
 
         {/* Light image for dark mode */}
       <img
-        src={'/insihts_dark.png'}
-        alt={'Insihts'}
-        className='h-[55px] w-auto hidden dark:block'
+        src={'/Prodio/prodio/prodio_logo_3.png'}
+        alt={'Prodio'}
+        className='h-[45px] w-auto hidden dark:block'
       />
     </div>
   );

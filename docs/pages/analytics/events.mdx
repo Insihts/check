@@ -19,25 +19,25 @@ For example, you might have a button with the following code:
 Add a data property with the following format:
 
 ```html
-data-insihts-event="{event-name}"
+data-Prodio-event="{event-name}"
 ```
 
 Your button element would now look like this:
 
 ```html
-<button id="signup-button" data-insihts-event="Signup button">Sign up</button>
+<button id="signup-button" data-Prodio-event="Signup button">Sign up</button>
 ```
 
 When the user clicks on this button, Insights will record an event named **Signup button**.
 
-You can optionally pass along `event_data` with the `data-insihts-event-*` annotation:
+You can optionally pass along `event_data` with the `data-Prodio-event-*` annotation:
 
 ```html
 <button 
   id="signup-button" 
-  data-insihts-event="Signup button"
-  data-insihts-event-email="bob@aol.com"
-  data-insihts-event-id="123">
+  data-Prodio-event="Signup button"
+  data-Prodio-event-email="bob@aol.com"
+  data-Prodio-event-id="123">
   Sign up
 </button>
 ```
@@ -57,12 +57,12 @@ being recorded with the **Signup button** event name.
 
 ### Using JavaScript
 
-You can also record events manually using the `window.insihts` object. To accomplish the same thing as the above data-* method, you can do:
+You can also record events manually using the `window.Prodio` object. To accomplish the same thing as the above data-* method, you can do:
 
 ```js
 const button = document.getElementById('signup-button');
 
-button.onclick = () => insihts.track('Signup button');
+button.onclick = () => Prodio.track('Signup button');
 ```
 
 In this case, Insights will record an event named **Signup button**.
@@ -73,16 +73,16 @@ If you want to record dynamic data, refer to the Tracker functions in the Insigh
 
 Once your events are recorded, they will be available on your website's **Events** page.
 
-![Events Page](https://insihts.com)
+![Events Page](https://Prodio.com)
 
 ### View Event Properties
 
 Your custom data can be accessed under the **Properties** tab on the **Events** page. This section will show you all the custom data properties you saved, as well as a breakdown of all the values.
 
-![Event Properties](https://insihts.com)
+![Event Properties](https://Prodio.com)
 
 </Steps>
 
 <Callout>
-  For further assistance, visit our [Help Center](https://insihts.com) or contact the support team.
+  For further assistance, visit our [Help Center](https://Prodio.com) or contact the support team.
 </Callout>
